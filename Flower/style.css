@@ -1,0 +1,176 @@
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(69, 69, 141);
+}
+
+.flower {
+  width: 500px;
+  height: 500px;
+
+  /* width: 300px;
+  height: 300px; */
+
+  background: rgb(117, 137, 217);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.petal_1,
+.petal_2,
+.petal_3,
+.petal_4 {
+  position: absolute;
+  background: rgb(69, 69, 141);
+  width: 140px;
+  height: 330px;
+    /* width: 87px;
+    height: 200px; */
+  border-radius: 50%;
+}
+
+
+
+.petal_1 {
+  transform: rotate(45deg);
+  bottom: -1px;
+  left: 120px;
+  /* bottom: -9px;
+  left: 77px; */
+}
+
+.petal_2 {
+  transform: rotate(135deg);
+  top: 20px;
+  left: 111px;
+  /* top: 7px;
+  left: 56px; */
+}
+
+.petal_3 {
+  transform: rotate(-135deg);
+  top: 27px;
+  right: 100px;
+  /* top: 17px;
+  right: 58px; */
+}
+
+.petal_4 {
+  transform: rotate(-45deg);
+  bottom: 10px;
+  right: 100px;
+  /* bottom: 6px;
+    right: 55px; */
+}
+
+.fill {
+  display: inline-block;
+  width: 42px;
+  height: 180px;
+  /* width: 20px;
+    height: 90px; */
+  background: rgb(117, 137, 217);
+  z-index: 99;
+  border-radius: 50%;
+  position: absolute;
+}
+
+
+.petal_fill_1{
+    transform: rotate(45deg);
+    bottom: 56px;
+    left: 148px;
+}
+
+.petal_fill_2{
+    transform: rotate(135deg);
+    top: 85px;
+    left: 147px;
+    /* top: 56px;
+    left: 82px; */
+}
+
+.petal_fill_3{
+    transform: rotate(-135deg);
+    top: 79px;
+    right: 122px;
+    /* top: 54px;
+    right: 73px; */
+}
+
+.petal_fill_4{
+    transform: rotate(-45deg);
+    bottom: 62px;
+    right: 128px;
+    /* bottom: 43px;
+    right: 71px; */
+}
+
+@media screen and (max-width:768px){
+    .flower {
+        width: 300px;
+        height: 300px;
+      }
+      
+      .petal_1,
+      .petal_2,
+      .petal_3,
+      .petal_4 {
+          width: 87px;
+          height: 200px;
+      }
+      
+      
+      
+      .petal_1 {
+        bottom: -9px;
+        left: 77px;
+      }
+      
+      .petal_2 {
+        top: 7px;
+        left: 56px;
+      }
+      
+      .petal_3 {
+        top: 17px;
+        right: 58px;
+      }
+      
+      .petal_4 {
+        bottom: 6px;
+          right: 55px;
+      }
+      
+      .fill {
+        width: 20px;
+          height: 90px;
+      }
+      
+      
+      .petal_fill_1{
+          bottom: 33px;
+          left: 97px;
+      }
+      
+      .petal_fill_2{
+          top: 56px;
+          left: 82px;
+      }
+      
+      .petal_fill_3{
+          top: 54px;
+          right: 73px;
+      }
+      
+      .petal_fill_4{
+          bottom: 43px;
+          right: 71px;
+      }
+}
